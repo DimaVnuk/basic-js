@@ -11,15 +11,15 @@ import { NotImplementedError } from '../extensions/index.js';
  *
  * The result should be [-1, 150, 160, 170, -1, -1, 180, 190]
  */
-export default function sortByHeight(/* arr */) {
-  let count = 0;
-  const newArr = arr;
-  const arrFilter = arr.filter((i) => i !== -1).sort((a, b) => a - b);
+export default function sortByHeight( arr ) {
+  let j = 0;
+  const count = arr;
+  const filterArr = arr.filter((i) => i !== -1).sort((a, b) => a - b);
   for (let i = 0; i < arr.length; i++) {
     if (arr[i] !== -1) {
-      newArrt[i] = arrFilter[j];
+      count[i] = filterArr[j];
       j++;
     }
   }
-  return newArr;
+  return count;
 }
